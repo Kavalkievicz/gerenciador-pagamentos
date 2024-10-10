@@ -4,13 +4,11 @@ import com.example.gerenciador_pagamentos.model.Pagamento;
 import com.example.gerenciador_pagamentos.repository.PagamentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/pagamentos")  // Alterado para /api/pagamentos
+@RequestMapping("/api/pagamentos")
 public class PagamentoController {
-
     @Autowired
     private PagamentoRepository pagamentoRepository;
 

@@ -3,13 +3,11 @@ package com.example.gerenciador_pagamentos.model;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 
-
 @Entity
 public class Jogador {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer codJogador;
-    
     private String nome;
     private String email;
     private LocalDate datanasc;

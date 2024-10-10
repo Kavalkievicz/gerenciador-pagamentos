@@ -7,7 +7,6 @@ public class Pagamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer codPagamento;
-    
     private short ano;
     private byte mes;
     private double valor;
