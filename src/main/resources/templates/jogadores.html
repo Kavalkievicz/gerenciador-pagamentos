@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Jogadores</title>
+</head>
+<body>
+    <h1>Jogadores</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Data de Nascimento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="jogador : ${jogadores}">
+                <td th:text="${jogador.nome}"></td>
+                <td th:text="${jogador.email}"></td>
+                <td th:text="${jogador.datanasc}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
